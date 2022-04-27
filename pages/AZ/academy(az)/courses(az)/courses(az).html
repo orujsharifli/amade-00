@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/img/amade-a.svg">
+    <link rel="stylesheet" href="/style.css">
+    <title>Kurslar | AMADE Group</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-angle-up"></i></button>
+    <div class="contact-wrapper content-wrapper">
+        <div class="contact content">
+            <div class="mail-phone">
+                <div class="mail">
+                    <i class="fa-solid fa-envelope mail-icon"></i>
+                    <a href="mailto:info@amade.az" class="contact-navbar">info@amade.az</a>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone-flip mail-icon"></i>
+                    <a href="tel:+994124659204" class="contact-navbar">+994 (12) 465 9204;</a>
+                    <a href="tel:+994703397070" class="contact-navbar phone-2">+994 (70) 339 7070</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <i class="fa-solid fa-location-dot mail-icon"></i>
+                <a href="https://goo.gl/maps/7CJGvLT2JgTrqXMM6" class="contact-navbar" target="_blank">Bakı şəhəri,
+                    Əhməd
+                    Rəcəbli 5A, Life Centre, 6-cı blok, 2-ci mərtəbə - 215</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="navbar-wrapper content-wrapper">
+        <div class="navbar">
+            <a href="/index.html" class="logo-class"><img src="/img/Amade_Logo_SVG.svg" alt="" class="main-logo"></a>
+            <div class="menu-content">
+                <a href="/index.html">Ana səhifə</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Haqqımızda<i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="/pages/AZ/about-us(az)/who-are-we(az).html">Biz kimik?</a>
+                        <a href="/pages/AZ/about-us(az)/whyamade(az).html">Niyə AMADE?</a>
+                        <a href="/pages/AZ/about-us(az)/employees(AZ).html">Əməkdaşlarımız</a>
+                        <a href="/pages/AZ/about-us(az)/our-successful-work(az).html">Uğurlu işlərimiz</a>
+                        <a href="./pages/AZ/about-us(az)/videos(AZ).html">Videoçarxlar</a>
+                        <a href="/pages/AZ/about-us(az)/publications(az)/publications(az).html">Nəşrlərimiz</a>
+                        <a href="#">Rəylər</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Konsaltinq<i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./pages/biz-kimik.html">Hüquqi xidmət</a>
+                        <a href="./pages/tax-service(az).html">Vergi xidməti</a>
+                        <a href="./pages/employees(AZ).html">Mediasiya xidməti</a>
+                        <a href="./pages/publications(AZ).html">İnsan resursları xidməti</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Akademiya<i
+                            class="fa-solid fa-angle-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./pages/AZ/academy(az)/courses(az).html">Kurslar</a>
+                        <a href="#">Təlimlər</a>
+                        <a href="#">İşə qəbul müsabiqələrinə hazırlıq</a>
+                    </div>
+                </div>
+                <a href="./index.html">Abunə xidmətləri</a>
+                <a href="./pages/contact.html">Əlaqə</a>
+            </div>
+
+            <div class="language dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dil seçimi<i class="fa-solid fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">English</a>
+                    <a href="#about">Русский</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-title-area-wrapper content-wrapper">
+        <div class="page-title-area">
+            <p class="page-title">Kurslar</p>
+            <div class="page-direction">
+                <a href="/index.html">Ana səhifə</a><i class="fa-solid fa-angle-right"></i>
+                <p>Akademiya</p><i class="fa-solid fa-angle-right"></i>
+                <p>Kurslar</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="academy-services-wrapper content-wrapper" id="academy-section">
+        <div class="academy-services content">
+            <div class="image-text-description">
+                <img src="/img/asesor-juridico.jpg">
+                <div class="texts-description">
+                    <h1 class="description-text"><i class="fa-solid fa-check"></i>“Amade Hüquq Məktəbi” AMADE
+                        GROUP MMC-nin nəznində 2018-ci ildən
+                        etibarən fəaliyyət göstərir.
+                        Məktəbin məqsədini tələbələrinin və hüquq sahəsində fəaliyyət göstərən şəxslərin praktik peşə
+                        vərdişlərinə yiyələnməsi, peşə hazırlığı səviyyəsinin yüksəldilməsi və qanunvericiliyin daha
+                        düzgün tətbiq olunması ilə bağlı təcrübənin inkişaf etdirilməsi təşkil edir.</h1>
+                    <h1 class="description-text"><i class="fa-solid fa-check"></i>Bu məqsədlə “Amade Hüquq
+                        Məktəbi” qarşısında aşağıdakı vəzifələr
+                        qoyulmuşdur:</h1>
+                    <h1 class="description-text">Tədris (dərslər, seminarlar, kurslar), Praktik peşə vərdişlərinin
+                        artırılmasına yönəlik təlimlər, Kitabxana (ixtisaslaşmış kitabxananın qurulması), Elmi nəşrlər,
+                        Milli və beynəlxalq təşkilatlarla əməkdaşlıq, konqres və seminarların təşkili.</h1>
+                </div>
+            </div>
+
+            <div class="courses-row sequence">
+                <div class="course-box">
+                    <img src="/img/business-lawyer-man-suit-wrist-watch.jpeg" alt="">
+                    <div class="box-foot-content">
+                        <div class="box-foot">
+                            <h4 class="course-title">Korporativ hüquqşünas təkmilləşdirmə təlimi</h4>
+                            <div class="course-info-register">
+                                <a href="/pages/AZ/academy(az)/courses(az)/course-register(az)/corporate-lawyer-training-course-register(az).html"
+                                    class="course-button" id="more-button">Ətraflı</a>
+                                <a href="/pages/AZ/academy(az)/courses(az)/course-register(az)/corporate-lawyer-training-course-register(az).html"
+                                    class="course-button" id="register-button">Qeydiyyat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <img src="https://wallpaperaccess.com/full/673238.jpg" alt="">
+                    <div class="box-foot-content">
+                        <div class="box-foot">
+                            <h4 class="course-title">Hakimlik və vəkillik<br>imtahanlarına hazırlıq kursu</h4>
+                            <div class="course-info-register">
+                                <a href="#" class="course-button" id="more-button">Ətraflı</a>
+                                <a href="./course-register(az)/judicial-and-advocacy-exams-preparation-course-register(az).html"
+                                    class="course-button" id="register-button">Qeydiyyat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <img src="https://legaladvisors.com.pk/wp-content/uploads/2020/09/lawyer-in-kuching-1-1024x678-1.jpg"
+                        alt="">
+                    <div class="box-foot-content">
+                        <div class="box-foot">
+                            <h4 class="course-title">Prokurorluq, polis, ədliyyə orqanlarına qəbul imtahanlarına
+                                hazırlıq kursu</h4>
+                            <div class="course-info-register">
+                                <a href="#" class="course-button" id="more-button">Ətraflı</a>
+                                <a href="./course-register(az)/preparatory-course-for-entrance-exams-to-the-prosecutor's-office-police-justice-register(az).html"
+                                    class="course-button" id="register-button">Qeydiyyat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-box">
+                    <img src="http://cdn.shopify.com/s/files/1/2726/4990/files/man-wearing-suit-carrying-leather-briefcase_bcc49b92-b753-4b0d-b0a9-ae8030d5c682.jpg?v=1643624927"
+                        alt="">
+                    <div class="box-foot-content">
+                        <div class="box-foot">
+                            <h4 class="course-title">Dövlət qulluğu<br>imtahanına hazırlıq kursu</h4>
+                            <div class="course-info-register">
+                                <a href="#" class="course-button" id="more-button">Ətraflı</a>
+                                <a href="./course-register(az)/civil-service-exam-preparation-course-register(az).html"
+                                    class="course-button" id="register-button">Qeydiyyat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-address-wrapper content-wrapper">
+        <div class="contact-address content">
+            <div class="image-text-description">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="500" height="381" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Amade%20group&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://putlocker-is.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 381px;
+                                width: 500px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">email google map</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 381px;
+                                width: 500px;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="contact-description">
+                    <h4 class="contacts-bottom-title">Əlaqə</h4>
+                    <div class="contacts-bottom-addresses">
+                        <a href="https://goo.gl/maps/7CJGvLT2JgTrqXMM6" class="contacts-bottom-address" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Bakı şəhəri, Əhməd Rəcəbli 5A,<br>Life Centre, 6-cı blok, 2-ci mərtəbə - 215
+                        </a>
+                        <a href="tel:+994124659204" class="contacts-bottom-address">
+                            <i class="fa-solid fa-phone"></i>
+                            +994 (12) 465 9204
+                        </a>
+                        <a href="tel:+994703397070" class="contacts-bottom-address">
+                            <i class="fa-solid fa-phone"></i>
+                            +994 (70) 339 7070
+                        </a>
+                        <a href="mailto:info@amade.az" class="contacts-bottom-address">
+                            <i class="fa-solid fa-envelope"></i>
+                            info@amade.az
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us-content content-wrapper">
+        <div class="contact-us content">
+            <div class="contact-us-title-content">
+                <p class="contact-us-title">Bizə mesaj göndərin:</p>
+            </div>
+            <form method="post" class="formdur-bu">
+                <div class="contact-us-form">
+                    <div class="contact-us-left-form-content">
+                        <div class="form-group">
+                            <label for="fname">Ad<span class="star">*</span></label>
+                            <input type="text" id="fname" name="txtName" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fname">Elektron poçt<span class="star">*</span></label>
+                            <input type="email" id="fname" name="txtEmail" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fname">Telefon nömrəsi</label>
+                            <input type="number" id="fname" name="txtPhone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="contact-us-right-form-content">
+                        <div class="form-group">
+                            <label for="fname">Başlıq<span class="star">*</span></label>
+                            <input type="text" id="fname" name="txtSubject" class="form-control" required>
+                        </div>
+                        <div class="form-text">
+                            <label for="message">Məzmun<span class="star">*</span></label>
+                            <textarea name="txtMessage" id="message" required="" class="text-area" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" name="btnContact" class="btn btn-primary" required="required">Mesajı
+                    göndər</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-wrapper content-wrapper">
+        <div class="footer content">
+            <div class="goverment-agencies-wrapper">
+                <div class="government-agencies">
+                    <img src="/img/footsecond.png" alt="" class="e-qanun">
+                    <img src="https://huquqshunas.az/images/footfirst.png?2022-03-29%2006:53:02" alt=""
+                        class="vekiller-kollegiyasi">
+                    <img src="/img/footfourth.png" alt="" class="vekiller-kollegiyasi">
+                    <img src="/img/ali-mehkeme.png" alt="" class="ali-mehkeme">
+                    <img src="/img/logot-1-az.png" alt="" class="milli-meclis">
+                </div>
+            </div>
+            <div class="pages">
+                <div class="page-1-content">
+                    <div class="page-1">
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Ana
+                                Səhifə</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Haqqımızda</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="./pages/biz-kimik.html"
+                                class="footer-page-class"></i>Biz kimik</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Niyə
+                                AMADE?</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="/pages/employees(AZ).html"
+                                class="footer-page-class"></i>Əməkdaşlarımız</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a
+                                href="./pages/AZ/about-us(az)/publications(az)/publications(az).html"
+                                class="footer-page-class"></i>Nəşrlərimiz</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Konsaltinq</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Hüquqi
+                                xidmət</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-1-content">
+                    <div class="page-1">
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Şirkətlər
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Hüquqi
+                                şəxslərin
+                                ləğvi</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Müqavilələr
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Tibb
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Tikinti
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Əqli
+                                mülkiyyət
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Gömrük
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Miqrasiya
+                                hüququ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-1-content">
+                    <div class="page-1">
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>İdman
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Sığorta
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Cinayət
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Ailə
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>İnzibati
+                                hüququ</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Vergi
+                                xidməti</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Mediasiya
+                                xidməti</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>İnsan
+                                resursları
+                                xidməti</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-1-content">
+                    <div class="page-1">
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Akademiya</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Kurslar</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Təlimlər</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>İş
+                                müsabiqələrinə hazırlıq</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="#" class="footer-page-class"></i>Abunə
+                                xidmətləri</a>
+                        </div>
+                        <div class="page-section">
+                            <i class="fa-solid fa-circle"></i><a href="./pages/contact.html"
+                                class="footer-page-class"></i>Əlaqə</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright-text">amade.az © 2022 Müəllif Hüquqları Qorunur.</p>
+                <p>Site by Oruj Sharifli</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
