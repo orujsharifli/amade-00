@@ -31,14 +31,21 @@
 
 
 
-function myFunction(event) {
-    Array.from(document.querySelectorAll(".dropdown")).forEach(el => {
-        // el.querySelector(".myDropdown").className = "myDropdown"
-        console.log(el)
-    })
-    event.target.parentElement.querySelector(".myDropdown").classList.toggle("show");
-
-}
+window.addEventListener("click",(e)=>{
+    if(Array.from(document.querySelectorAll(".dropbtn")).find(el=>el === e.target)){
+        e.target.parentElement.querySelector(".myDropdown").classList.toggle("show")
+        Array.from(document.querySelectorAll(".dropdown")).forEach(el => {
+            if(el !== e.target.parentElement){
+                el.querySelector(".myDropdown").className = "myDropdown"
+            }
+        })
+    }
+    else{
+        Array.from(document.querySelectorAll(".dropdown")).forEach(el => {
+            el.querySelector(".myDropdown").className = "myDropdown"
+        })
+    }
+})
 
 
 
