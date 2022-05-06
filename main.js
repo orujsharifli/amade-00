@@ -31,30 +31,18 @@
 
 
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function myFunction(event) {
+    Array.from(document.querySelectorAll(".dropdown")).forEach(el => {
+        // el.querySelector(".myDropdown").className = "myDropdown"
+        console.log(el)
+    })
+    event.target.parentElement.querySelector(".myDropdown").classList.toggle("show");
+
 }
 
-window.onclick = function (event) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
 
-    for (let i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
 
-        if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-        }
-    }
-    if (event.target.className == 'dropbtn') {
-        console.log(event.target)
-        if (event.target.parentElement.querySelector('div').className.includes('show')) {
-            event.target.parentElement.querySelector('div').classList.remove('show')
-        }
-        else {
-            event.target.parentElement.querySelector('div').classList.add('show')
-        }
-    }
-}
+
 
 // Scroll Back To Top Button and opacity effect
 $(window).scroll(function () {
@@ -76,7 +64,7 @@ $('#go-to-top').click(function () {
 
 
 
-const hamburger = document.getElementById("demo");
+const hamburger = document.querySelector(".hamburger-xmark-icon");
 const navMenu = document.querySelector(".navbar-2-wrapper");
 
 hamburger.addEventListener("click", () => {
@@ -103,7 +91,7 @@ $('.mainservicesinfo-slider').slick({
             breakpoint: 1024,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true
             }
@@ -111,8 +99,8 @@ $('.mainservicesinfo-slider').slick({
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         },
         {
@@ -126,57 +114,78 @@ $('.mainservicesinfo-slider').slick({
     ]
 })
 
-$('.partners_slider').slick({
+$('.partners-slider').slick({
+    infinite: true,
     slidesToShow: 6,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+    ]
+})
+
+$('.corporate-slider').slick({
+    slidesToShow: 10,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
 })
 
-$(function () {
-    $('.partners2014_slider').slick({
-        slidesToShow: 10,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    })
+$('.sheets-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
 })
 
-$(function () {
-    $('.worksheets_slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    })
+$('.commentboxes-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
 })
 
-$(function () {
-    $('.commentboxes_slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2500,
-    })
+$('.staff-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
 })
 
-$(function () {
-    $('.employees_slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    })
+$('.box-slider').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
 })
 
-$(function () {
-    $('.news_slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1250,
-    })
+$('.publications-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
 })
+
+$('.lessons-slider').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+})
+
+$('.videos-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+})
+
+
 
 
 // currentyear
@@ -189,11 +198,15 @@ document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 // TYPING EFFECT
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
+var textArray = ["hüquqi", "akademik", "korporativ"];
 
-const textArray = ["hüquqi", "akademik", "korporativ"];
+// if (document.querySelector(".main-title-child").className.includes("Peşəkar") === true) {
+//     var textArray = ["a", "akademik", "korporativ"];
+// }
+
 const typingDelay = 200;
 const erasingDelay = 100;
-const newTextDelay = 750; // Delay between current and next text
+const newTextDelay = 750;
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -240,5 +253,7 @@ document.addEventListener("DOMContentLoaded", function () { // On DOM Load initi
 // setTimeout(function () {
 //     this.document.body.style.overflow = ''
 //     document.querySelector('.page-loader').style.display = 'none'
-// }, 3000)
+// }, 3000) 
+
+
 
